@@ -31,6 +31,19 @@
         background-color: #4caf50;
         color: white;
       }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
     </style>
   </head>
   <body>
@@ -46,8 +59,108 @@
     </div>
 
     <div id="home">
-      <h2 style="text-align: center">Foundations</h2>
-      <p>Foundations</p>
+      <h2 style="text-align: center">Harexi e-Wellness App</h2>
+      <p></p>
+      <div>
+        <p className="titles m-5">PROJECT INFORMATION</p>
+        <p className="text">Academic Period : Fall 2020</p>
+        <p className="text">Project Name : e-Wellness Health Platform</p>
+        <p className="text">Client : Jasmine Berry</p>
+        <p className="text">Team Number : 09</p>
+      </div>
+      <div>
+        <p className="titles m-5">PROJECT DESCRIPTION</p>
+        <p className="text m-5">
+          Our mission is to develop the adequate technicaltool for patients to
+          receive treatments that arespecificto their individual needs, dietary
+          habits, lifestyle, exercise regimen, and personal goals in managing
+          their diabetes. Many of todayâ€™s treatments given to patients by
+          doctors are too generaland broad. Treatments should be focused with
+          patient precision, which is what we aim to accomplish with our
+          platform. Overall, the Harexi platform will work with you to make sure
+          you are getting appropriate preventive care and screening to live
+          long, healthy lives.
+        </p>
+      </div>
+      <div>
+        <p className="titles m-5">OUR CLIENT</p>
+        <Card className="col-md-3 mx-auto p-5">
+          <Card.Img src="pic1.jpg" className="contactImages"/>
+          <Card.Title className="mt-3">Jasmine Berry</Card.Title>
+          <Card.Text>CTO</Card.Text>
+          <Card.Text>jasmineBerry@gmail.com</Card.Text>
+        </Card>
+      </div>
+      <div>
+        <p className="titles m-5">MEET OUR TEAM</p>
+        <div className="row m-3">
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Feya Shah</Card.Title>
+              <Card.Text>Life Cycle Planner</Card.Text>
+              <Card.Text>fashah@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Anushka Gangwal</Card.Title>
+              <Card.Text>Project Manager</Card.Text>
+              <Card.Text>agangwal@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Kylie Chinn</Card.Title>
+              <Card.Text>Project Manager</Card.Text>
+              <Card.Text>kchinn@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Rucha Tambe</Card.Title>
+              <Card.Text>Prototyper</Card.Text>
+              <Card.Text>rtambe@usc.edu</Card.Text>
+            </Card>
+          </div>
+        </div>
+        <div className="row m-3">
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Apurva Hajare</Card.Title>
+              <Card.Text>Implementor</Card.Text>
+              <Card.Text>hajare@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Parul Gupta</Card.Title>
+              <Card.Text>Feasibility Analyst</Card.Text>
+              <Card.Text>parulgup@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Devika Sathaye</Card.Title>
+              <Card.Text>Requirements Engineer</Card.Text>
+              <Card.Text>sathaye@usc.edu</Card.Text>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card className="col-md-12 m-1 p-4">
+              <Card.Img src={client} className="contactImages"/>
+              <Card.Title className="mt-3">Ankita Agrawal</Card.Title>
+              <Card.Text>Software Architect</Card.Text>
+              <Card.Text>apagrawa@usc.edu</Card.Text>
+            </Card>
+          </div>
+        </div>
     </div>
   </body>
 </html>
